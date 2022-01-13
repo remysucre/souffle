@@ -167,7 +167,7 @@ add_flex_bison_dependency(scanner parser)
 
 # OSX compiler doesn't recognise `(void)var;` ideom
 set_source_files_properties(${CMAKE_CURRENT_BINARY_DIR}/parser/scanner.cc PROPERTIES
-             COMPILE_FLAGS "-Wno-error=unused-parameter")
+             COMPILE_FLAGS "-Wno-error=unused-parameter -Wno-error=sign-compare")
 
 # --------------------------------------------------
 # Souffle library
